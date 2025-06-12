@@ -7,7 +7,7 @@ namespace Temuulen_REST_API_дадлагийн_ажил.Data
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-
+        public DbSet<U021> U021s { get; set; }
         public DbSet<U41> U41 { get; set; }
         public DbSet<U021> U021 { get; set; }
         public DbSet<TEN_L> TEN_L { get; set; }
